@@ -1,0 +1,292 @@
+* {
+  margin: 0 0;
+  padding: 0 0; }
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #e3d3bc; }
+
+h3, a {
+  font-family: 'Orbitron', sans-serif;
+  color: darkslategray;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px lightgoldenrodyellow;
+  border-color: #E6AE02; }
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 900; }
+
+p {
+  font-size: .86rem;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #243D3D;
+  font-family: 'Montserrat Alternates', sans-serif; }
+
+a {
+  min-width: 100%;
+  text-align: right; }
+
+.header_box {
+  max-width: 1280px;
+  height: 706px;
+  margin: 0 auto;
+  padding: 2.8rem 0 0 0;
+  border-bottom: 6px solid #332B23; }
+  .header_box .img_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 620px; }
+    .header_box .img_box .l-block {
+      min-width: 600px; }
+      .header_box .img_box .l-block .left {
+        height: 640px;
+        background: url("../img/wood-left.jpg"), linear-gradient(#131413, #1A1A19, #292815);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 6px solid #332B23;
+        border-top-left-radius: 200px; }
+    .header_box .img_box .r-block {
+      display: flex;
+      display: -webkit-flexbox;
+      display: -ms-flexbox;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-width: 600px; }
+      .header_box .img_box .r-block .right {
+        height: 560px;
+        margin-left: -4px;
+        background: url("../img/wood-right.jpg"), linear-gradient(#0F0F0F, #0A0A09);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 6px solid #332B23;
+        border-left: none;
+        border-bottom-right-radius: 200px;
+        z-index: 2; }
+      .header_box .img_box .r-block #rights {
+        width: 422px;
+        padding: .2rem .6rem .4rem .6rem;
+        color: #787878;
+        font-family: 'Exo 2', sans-serif;
+        font-size: .7rem;
+        font-weight: 400;
+        letter-spacing: 1px; }
+        .header_box .img_box .r-block #rights b {
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-size: .8rem;
+          font-weight: 700;
+          letter-spacing: 2px; }
+  .header_box .title_box {
+    position: absolute;
+    display: flex;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    flex-direction: column;
+    justify-content: center;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: .8rem 0 0 0;
+    z-index: 4; }
+    .header_box .title_box .line {
+      width: 44rem;
+      height: .6rem;
+      margin: 0 auto;
+      background: #BC9A44;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); }
+    .header_box .title_box h1 {
+      margin: 0 auto .8rem auto;
+      padding: 0 0 0 .4rem;
+      color: #e3d3bc;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 10rem;
+      letter-spacing: .8rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
+
+.lineUnder {
+  width: 1280px;
+  height: 8px;
+  background-color: #332B23;
+  margin: 0 auto 5.4rem auto; }
+
+.arrow_box {
+  width: 100%;
+  margin: 0 0;
+  padding: .4rem 0;
+  display: flex;
+  justify-content: center; }
+  .arrow_box img {
+    width: 4rem;
+    height: 2rem; }
+
+.part_one,
+.part_two,
+.part_three,
+.part_four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  margin: 4rem auto 6rem auto;
+  padding: 1.8rem 1rem;
+  background: #e3d3bc;
+  background: rgba(219, 192, 163, 0.4);
+  border: 4px solid rgba(219, 192, 163, 0.3);
+  border-radius: 1.2rem; }
+
+.about_article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 96%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-radius: 1rem; }
+
+.image_container {
+  width: 40%;
+  margin: 0 auto -4rem auto;
+  padding: 0 0; }
+  .image_container .image_wrapper {
+    margin: 0 0;
+    padding: 0 0; }
+  .image_container img {
+    margin: 0 auto;
+    padding: 0 0;
+    border: 3px solid #3b1308;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 6px rgba(59, 19, 8, 0.6), -2px -2px 6px rgba(59, 19, 8, 0.6); }
+  .image_container .stairs {
+    width: 440px;
+    min-height: 586px;
+    margin: 0 auto; }
+  .image_container .tv,
+  .image_container .bed {
+    width: 500px; }
+  .image_container .tv {
+    margin-left: -4rem; }
+  .image_container .bed {
+    margin: .6rem auto -4rem -4em; }
+  .image_container .resto {
+    width: 440px; }
+  .image_container .table {
+    width: 440px; }
+
+.text_container {
+  width: 40%;
+  max-height: 35rem;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem 2rem;
+  background: url("../img/woodboard_text_01.jpg");
+  border: 3px solid #3b1308;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 6px rgba(59, 19, 8, 0.6), -2px -2px 6px rgba(59, 19, 8, 0.6); }
+  .text_container .title_container,
+  .text_container .text_wrapper,
+  .text_container .button_container {
+    padding: .6rem 1rem .6rem 1rem;
+    background: rgba(227, 211, 188, 0.8);
+    border: 3px solid #3b1308; }
+  .text_container .text_wrapper {
+    margin: 1rem auto; }
+    .text_container .text_wrapper .part_text {
+      padding: .3rem 0; }
+  .text_container .title_container,
+  .text_container .button_container {
+    max-width: 20rem; }
+  .text_container .button_container {
+    text-align: right; }
+    .text_container .button_container:hover {
+      background: url(../img/woodboard_21.jpg);
+      background-size: cover;
+      background-position-y: -2.7rem; }
+      .text_container .button_container:hover a {
+        color: whitesmoke;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px black; }
+
+.about_article_one {
+  background: url("../img/woodboard_01.jpg") no-repeat;
+  background-size: cover;
+  border: 3px solid #6a3516;
+  box-shadow: 2px 2px 4px rgba(106, 53, 22, 0.6), -2px -2px 4px rgba(106, 53, 22, 0.6); }
+
+.text_container_one {
+  padding-left: 0; }
+  .text_container_one .title_container,
+  .text_container_one .text_wrapper,
+  .text_container_one .button_container {
+    border-left: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; }
+  .text_container_one .button_container {
+    text-align: left; }
+
+.about_article_two {
+  background: url("../img/woodboard_02.jpg") no-repeat;
+  background-size: cover;
+  border: 3px solid #3b1a15;
+  box-shadow: 2px 2px 4px rgba(59, 26, 21, 0.6), -2px -2px 4px rgba(59, 26, 21, 0.6); }
+
+.text_container_two {
+  max-width: 34%;
+  padding-right: 0; }
+  .text_container_two .title_container,
+  .text_container_two .text_wrapper,
+  .text_container_two .button_container {
+    border-right: none;
+    text-align: right;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; }
+  .text_container_two .title_container,
+  .text_container_two .button_container {
+    margin-left: 5rem; }
+
+.about_article_three {
+  background: url("../img/woodboard_03.jpg") no-repeat;
+  background-size: cover;
+  border: 3px solid #96928d;
+  box-shadow: 2px 2px 4px rgba(150, 146, 141, 0.8), -2px -2px 4px rgba(150, 146, 141, 0.8); }
+
+.text_container_three {
+  max-width: 38%;
+  max-height: 29rem;
+  margin-left: 1.2rem;
+  padding-left: 0; }
+  .text_container_three .title_container,
+  .text_container_three .text_wrapper,
+  .text_container_three .button_container {
+    border-left: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; }
+  .text_container_three .button_container {
+    text-align: left; }
+
+.about_article_four {
+  background: url("../img/woodboard_05.jpg") no-repeat;
+  background-size: cover;
+  border: 3px solid #29282b;
+  box-shadow: 2px 2px 4px rgba(41, 40, 43, 0.8), -2px -2px 4px rgba(41, 40, 43, 0.8); }
+
+.text_container_four {
+  max-width: 38%;
+  max-height: 29rem;
+  margin-right: 1.2rem;
+  padding-right: 0; }
+  .text_container_four .title_container,
+  .text_container_four .text_wrapper,
+  .text_container_four .button_container {
+    border-right: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; }
+  .text_container_four .title_container,
+  .text_container_four .button_container {
+    margin-left: 5rem; }
+
+/*# sourceMappingURL=app.css.map */

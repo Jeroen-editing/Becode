@@ -1,0 +1,92 @@
+#small, #medium, #large {
+    margin: 15px;
+    border: 2px solid darkslategrey;
+    border-radius: 4px;
+    font-family: Josefin Sans, serif;
+    text-align: center;
+}
+
+#main {
+
+    font-size: 80%;
+}
+
+h1, p {
+    margin: 15px;
+    padding: 8px 4px;
+    font-family: Rubik, serif;
+    border: 2px solid darkslategrey;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: sienna;
+    text-shadow: 2px 2px 3px black;
+}
+
+p {
+    color: darkseagreen;
+    text-shadow: 1px 1px 2px black;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 299px) {
+    body {
+        background-color: maroon;
+    }
+    #small {
+
+    }
+    #medium {
+
+    }
+    #large {
+
+    }
+}
+
+
+/* For tablet: */
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    body {
+        background-color: darkolivegreen;
+    }
+    #small {
+        width: 50%;
+        float: left;
+    }
+    #medium {
+        width: 30%;
+        float: left;
+    }
+    #large {
+        width: 85%;
+        float: left;
+    }
+    p {
+        color: orange;
+    }
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 769px) {
+    body {
+        background-color: cadetblue;
+    }
+    #small {
+        float: left;
+        width: 26%;
+    }
+    #medium {
+        float: left;
+        width: 26%;
+    }
+    #large {
+        float: left;
+        width: 26%;
+    }
+    p {
+        color: whitesmoke;
+    }
+}
+

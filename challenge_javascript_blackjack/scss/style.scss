@@ -1,0 +1,98 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  max-width: 1280px;
+  min-height: 1300px;
+
+  margin: 0 auto;
+}
+
+main {
+  background-color: darkgreen;
+}
+
+.container {
+  display: inline-flex;
+}
+
+.boxOne, .boxThree {
+  min-height: 340px;
+  background-color: darkgreen;
+}
+
+.boxOne {
+  padding-top: 20px;
+}
+
+.boxTwo {
+  min-height: 150px;
+}
+
+.boxThree {
+  margin-top: -44px;
+}
+
+.cardHolders {
+  float: left;
+  min-height: 260px;
+  min-width: 182px;
+  max-width: 182px;
+  margin: 16px 40px 0 0;
+  border-radius: 12px;
+  border: 6px solid #963B08;
+  background-color: rgba(50, 112, 135, 0.4);
+  font-size: 146px;
+  font-family: Baloo;
+  text-shadow: 2px 2px 8px #963B08;
+  text-align: center;
+}
+
+#playerTargetOne, #pcTargetOne {
+  margin-left: 75px;
+}
+
+.scoreHolder {
+  float: left;
+  margin: -26px 32px 20px 73px;
+  padding: 3px 8px;
+  height: 100px;
+  width: 175px;
+  border: 4px solid darkblue;
+  border-radius: 8px;
+  background-color: lightgrey;
+  font-size: 20px;
+  font-family: Baloo;
+  text-shadow: 2px 2px 4px orange;
+}
+
+.push {
+  float: left;
+  min-height: 116px;
+  min-width: 112px;
+  margin: -26px 12px 20px 10px;
+  border-radius: 50%;
+  border: 4px solid darkblue;
+  background-color: #085F96;
+  font-size: 28px;
+  font-family: Baloo;
+  text-shadow: 2px 2px 4px #963B08;
+}
+
+#cards {
+  margin: -26px 46px 0 46px;
+}
+
+#stop {
+  background-color: #E8AA0C;
+}
+
+#reload {
+  margin-left: 50px;
+  background-color: #963B08;
+}
+
+#pcTargetOne {
+
+}

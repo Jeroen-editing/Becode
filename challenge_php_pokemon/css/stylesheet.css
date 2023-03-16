@@ -1,0 +1,246 @@
+body {
+    /* hide/disable vertical scrollbar =>  overflow-y: hidden; */
+}
+
+.container {
+    height: 750px;
+    border: 6px solid black;
+    border-radius: 20px;
+    margin: 0px 0px;
+    background-image: url("http://www.sclance.com/backgrounds/pokemon-forest-background/./pokemon-forest-background_1780831.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position : relative;
+}
+
+#mainTitle {
+    width: 480px;
+    border: 4px solid black;
+    border-radius: 8px;
+    font-family: "Gugi";
+    text-align: center;
+    font-size: 66px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 14px 0 10px 0;
+    background-color: #c63821;
+    position:absolute;
+    left: 120px;
+    bottom: 24px;
+}
+
+#boyPichu {
+    position:absolute;
+    left:100px;
+    top:154px;
+}
+
+#pokedexImg {
+    position:absolute;
+    top:10px;
+    right:150px;
+}
+
+#screen {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 173px;
+    right: 170px;
+}
+
+#getEvolution {
+    position: absolute;
+    border: 2px solid #018552;
+    background-color: #0AABC4;
+    border-radius: 50%;
+    height: 80px;
+    width: 92px;
+    bottom:130px;
+    right:323px;
+    z-index: 1;
+}
+
+#searchField {
+    position:absolute;
+    top:6px;
+    right:83px;
+    z-index: 2;
+    border: 1px solid #065491;
+    border-radius: 4px;
+    height: 24px;
+    width: 230px;
+    font-family: "Gugi";
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    color: black;
+    background-color: rgba(172, 184, 165, 0.8);
+
+}
+
+#front-sprite {
+    position:absolute;
+    width:185px;
+    height:185px;
+    top: 70px;
+    left:115px;
+    z-index: 2;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    color: aliceblue;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#poke-name {
+    font-size:25px;
+    position:absolute;
+    top:50px;
+    left:15px;
+    z-index: 1;
+    font-family: "Gugi";
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue
+}
+
+#poke-id {
+    font-weight:bold;
+    font-size:25px;
+    position:absolute;
+    top:100px;
+    left:15px;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#poke-type-one {
+    position:absolute;
+    bottom:45px;
+    left:15px;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#poke-type-two {
+    position:absolute;
+    bottom:20px;
+    left:15px;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+.Moves {
+    position:absolute;
+    bottom:25px;
+    right:20px;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#weight {
+    position:absolute;
+    top:150px;
+    left:15px;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#height {
+    position:absolute;
+    top:190px;
+    left:15px;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#one {
+    display:flex;
+    flex-direction: row;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#two {
+    display:flex;
+    flex-direction: row;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+#getEvolution:hover {
+    background-color: #065491; }
+
+/*# sourceMappingURL=pok%C3%A9sheet.css.map */
+
+
+#evoPokemon {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    z-index: 4;
+    top: 173px;
+    left: 100px;
+    color:white;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+
+#habitat {
+    position: absolute;
+    height: 466px;
+    width: 399px;
+    background-image: url("../img/backgroundForestMove-01.gif");
+    background-repeat:no-repeat;
+    background-size: 210%;
+    z-index: 1;
+    font-family: "Gugi";
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px darkslategray;
+    color: aliceblue;
+}
+
+
+#moveOne{
+    margin:15px 15px 15px 15px;
+
+}
+
+#moveTwo{
+    margin:15px 15px 15px 15px;
+}
+
+#moveThree{
+    margin:15px 15px 15px 15px;
+}
+
+#moveFour{
+    margin:15px 15px 15px 15px;
+}

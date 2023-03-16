@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    animation: fadeIn 2s forwards;
+}
+
+
+$darkest_bg: rgb(202, 193, 169);
+$dark_bg: rgb(223, 215, 192);
+$light_bg: rgb(255, 255, 255);
+$borders: 1px solid rgb(94, 87, 70);
+
+$title_font: 'Jura', sans-serif;
+$title_color: rgb(5, 74, 110);
+$title_bg: rgb(131, 153, 96);
+
+$header_bg: rgba(131, 153, 96, 0.44);
+
+$btn_font: 'Gruppo', cursive;
+$btn_bg: rgb(220, 191, 77);
+$btn_border: 1px solid rgba(94, 87, 70, 0.6);
+
+$hover_bg: rgb(31, 148, 221);
+$hover_border: 1px solid rgb(255, 202, 87);
+$hover_textcolor: rgb(255, 202, 87);
+
+$shadow: rgb(80, 80, 80);
+
+$text_font: 'Catamaran', sans-serif;
+$text_color: rgb(71, 71, 46);
+$text_border: 1px solid rgba(148, 108, 59, 0.28);
+
+
+/************ MAIN PAGE ************************************/
+/***********************************************************/
+
+
+.main_box {
+
+    .background_one {
+        width: 100%;
+        background: url("../assets/img/bg.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .background_two {
+        width: 100%;
+        background: url("../assets/img/tomato.jpg") no-repeat bottom;
+        background-size: cover;
+    }
+}
+/************ SEARCH BOX ***********************************/
+
+.search_box {
+    display: block;
+    height: 92px;
+    margin-top: 61px;
+    padding: 4px 0;
+    background: $dark_bg;
+    border-bottom: $text_border;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 92px;
+    }
+
+    .ingredient_input,
+    .search_btn {
+        display: block;
+        height: 32px;
+        width: 300px;
+        color: $text_color;
+        font-family: $btn_font;
+        font-weight: 800;
+        text-align: center;
+        border: $btn_border;
+        border-radius: 6px;
+    }
+    .ingredient_input {
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.8);
+        cursor: text;
+    }
+
+    .search_btn {
+        font-size: 24px;
+        background: rgba($btn_bg, 0.6);
+
+        &:hover {
+            cursor: pointer;
+            color: $hover_textcolor;
+            text-shadow: 0 0 2px black;
+            background: rgba($hover_bg, 0.6);
+            border: $hover_border;
+            box-shadow: inset 0 0 2px $shadow;
+        }
+    }
+}
+
+.ingredient_box {
+    display: block;
+    min-height: 12rem;
+    position: relative;
+    background: rgba($light_bg, 0.7);
+    border-bottom: $text_border
+}
+
+
+/************ FRIDGE & RECIPE BOX ***********************************/
+
+/**************** fridge ****************/
+
+.fridge_box{
+    width: 100%;
+    border-bottom: $borders;
+    border-bottom-width: 1px;
+
+    .fridge_content {
+        min-height: 12rem;
+        background: rgba($light_bg, 0.7);
+    }
+    .chef_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
+        position: sticky;
+        bottom: 0px;
+        background: $dark_bg;
+        border-top: $text_border;
+
+        .chef_btn {
+            display: block;
+            height: 32px;
+            width: 300px;
+            color: $text_color;
+            font-family: $btn_font;
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;
+            background: rgba($btn_bg, 0.6);
+            border: $btn_border;
+            border-radius: 6px;
+
+            &:hover {
+                cursor: pointer;
+                color: $hover_textcolor;
+                text-shadow: 0 0 2px black;
+                background: rgba($hover_bg, 0.6);
+                border: $hover_border;
+                box-shadow: inset 0 0 2px $shadow;
+            }
+        }
+    }     
+}
+    
+    
+/**************** recipe ****************/
+
+.recipe_box,
+.popup_box {
+    overflow-y: scroll;
+    background: $light_bg;
+    border-width: 2px;
+    cursor: default;
+}
+
+.recipe_box {
+    width: 100%;
+    border-bottom: $borders;
+    border-bottom-width: 2px;
+}
+
+.popup_box {
+    width: 90%;
+    margin: 8px auto;
+    border: $borders;
+    border-radius: 3px;
+    animation: scaleIn 1.5s forwards;
+}
+        
+.article_header {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 68px;
+    background: $darkest_bg;
+    border-bottom: 1px solid rgba(94, 87, 70, 0.6);
+            
+    .photo_box {
+        width: 36%;
+        overflow: hidden;
+        border-right: 1px solid rgba(94, 87, 70, 0.6);
+        border-right-width: 1px;
+
+        .photo {
+            width: 100%;
+        }
+    }
+    .title_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 65%;
+        background: $darkest_bg;
+
+        .article_title {
+            padding: 4px 0 4px 14px;
+            color: $title_color;
+            font-family: $title_font, sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            text-align: left;
+            background-color: $header_bg;
+            border-top: $text_border;
+            border-bottom: $text_border;
+        }
+    }    
+}
+
+.text_box,
+.popup_text_box {
+    width: auto;
+    padding: 0px 12px 12px 12px;
+    overflow-y: scroll;
+        
+    .text_title,
+    .form_label {
+        min-height: 1.4rem;
+        min-width: 200px;
+        margin-top: 12px;
+        padding: 4px 0 2px 8px;
+        color: $title_color;
+        font-family: $title_font;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+        background: rgba($title_bg, 0.44);
+        border: $text_border;
+        border-bottom: none;        
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    .paragraph,
+    .text,
+    .form_input,
+    .form_message {
+        margin-bottom: 8px;
+        padding: 8px 8px 6px 8px;
+        color: rgb(36, 54, 17);
+        color: $text_color;
+        font-family: $text_font;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-align: left;
+        line-height: 20px;
+        background: rgba($dark_bg, 0.2);
+        border: $text_border;
+        border-top: none;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+
+        .breakline {
+            display: block;
+            margin-top: 8px;
+            border-bottom: 1px solid $darkest_bg;
+        }
+
+        span {
+            margin-right: 4px;
+            color: $title_color;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+
+    .explain_text {
+        margin: 4px auto;
+        padding: 6px 0 10px 0;
+        width: 96%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $dark_bg;
+        border-radius: 0px;
+    }
+    .paragraph {
+        .first {
+            margin-top: -2px;
+        }
+        .last {
+            padding-bottom: 6px;
+            border-bottom: none; 
+        }
+    }
+}
+
+.contact_form {
+    max-height: 440px;
+    overflow-y: scroll;
+    padding: 0 12px;
+
+    .form_field_one,
+    .form_field_two {
+        border: none;
+    }
+    .form_label,
+    .form_input,
+    .form_message {
+        display: block;
+        margin-right: 20px;
+        padding-right: 0px; 
+    }
+    .form_input,
+    .form_message {
+        &::-webkit-input-placeholder {
+            color: rgba($text_color, 0.6);
+            font-weight: 100;
+        } 
+        &:-ms-input-placeholder {
+            color: rgba($text_color, 0.6);
+            font-weight: 100;
+        }       
+        &::placeholder {
+            color: rgba($text_color, 0.6);
+            font-weight: 100;
+        }
+        cursor: text;
+    }
+    .form_label {
+        width: 98%;
+    }
+    .form_input {
+        width: 96%;
+        height: 20px;
+        padding: 4px 8px 2px 8px; 
+    }
+    .form_message {
+        width: 98%;
+        padding-bottom: 0px;
+    }
+    .open_space {
+        width: 100%;
+        height: 1px;
+        margin: 14px 0 4px 0;
+        background: rgb(3, 125, 125);
+    }
+    .form_btn {
+        display: block;
+        height: 26px;
+        margin-top: 12px;
+        padding: 2px 6px;
+        color: $text_color;
+        font-family: $btn_font;
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        background: $btn_bg;
+        border: 1px solid rgba(12, 107, 107, 0.2);
+        border-radius: 3px;
+
+        &:hover {
+            cursor: pointer;
+            color: $hover_textcolor;
+            text-shadow: 0 0 2px black;
+            background: $hover_bg;
+            box-shadow: inset 0 0 1px $shadow;
+        } 
+    }
+}
+
+.contact_footer {
+    width: 100%;
+    height: 36px;
+    overflow: hidden;
+    background: green;
+    border-top: $borders;
+    border-top-width: 2px;
+
+
+    .window_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 36px;
+        padding-top: 4px;
+        background: $btn_bg;
+        border: none;
+
+        p {
+            color: $text_color;
+            font-family: $btn_font;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            word-spacing: 4px;
+        }
+
+        span {
+            margin: 2px 16px 0 16px;
+            color: $title_color;
+            font-size: 22px;
+            line-height: 16px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $hover_bg;
+
+            span {
+                color: $text_color;
+            }
+            p {
+                color: $hover_textcolor;
+                text-shadow: 0 0 2px black;
+            }
+        }
+    }
+}
+
+.about_hidden,
+.recipe_hidden,
+.explain_hidden,
+.contact_hidden {
+    display: none;
+}
+
+.about_visible,
+.recipe_visible,
+.explain_visible,
+.contact_visible {
+    display: block;
+    height: 59.8rem;
+    margin: 0 auto;
+    padding: 0 8px;
+    position: absolute;
+    background: rgba(0,0,0,0.88);
+    z-index: 2;
+
+    h3 {
+        padding-top: 8px;
+        color: white;
+        font-family: $btn_font;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        animation: fadeIn 2s forwards;
+    }
+    .copyBox {
+        width: 84%;
+        margin: -6px auto;
+        position: relative;
+        cursor: default;
+        animation: fadeIn 2s forwards;
+
+        .our_brand {
+            padding-bottom: 4px;
+            color: rgb(109, 109, 67);
+            font-family: $btn_font;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            border-bottom: 1px solid $text_color;
+
+            span {
+                margin: 0 4px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .name {
+                color: rgb(19, 108, 156);
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+
+        h4 {    
+            margin-top: 4px;   
+            color: white;
+            font-family: $btn_font;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-align: center;   
+        }
+    }
+}
+
+.rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 6px 0;
+    background: $dark_bg;
+    cursor: default;
+
+    .left_footer {
+        margin-left: 6px;
+        p {
+            display: block;
+            margin: 0 auto;
+            color: rgb(61, 61, 37);
+            font-family: $text_font;
+            font-size: 12px;
+            font-weight: 100;
+            text-align: right;
+            line-height: 16px;
+    
+            span {
+                color: rgb(24, 83, 52);
+                font-family: $title_font;
+                font-weight: 500;
+            } 
+        }
+    }
+    .right_footer {
+        margin-right: 6px;
+        a {
+            text-decoration: none;
+
+            .link {
+                height: 20px;
+                width: 20px;
+                margin-right: 4px;
+                font-weight: 600;
+                border: none;
+
+                .linkImg {
+                    height: 18px;
+                    width: 18px;
+                    background: rgb(202, 202, 202);
+                    border: 1px solid rgb(202, 202, 202);
+                }
+
+                &:hover {
+                    animation: scaleText 2s;
+                    color: $hover_textcolor;
+                    border: $hover_border;
+                    cursor: pointer;
+                }
+            }
+            .github {
+                margin-left: 12px;
+            } 
+        } 
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(86%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+@keyframes scaleText {
+    0% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+    50% {
+        transform: scaleX(110%) scaleY(120%);
+    }
+    100% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+}

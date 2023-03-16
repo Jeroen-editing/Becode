@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+    background: #036461;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(../img/code-3337044_1920.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.titleWrap {
+    height: 320px;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: rgba(191, 191, 191, 0.8);
+    box-shadow: 0 0 8px 4px black;
+}
+
+h1, h2 {
+    color: #c1c100;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 6px 2px 2px rgb(0, 66, 61);
+}
+
+h2 {
+    margin-top: 60px;
+    font-size: 100px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 140px;
+}
+
+body.fixed-nav .site-wrap {
+    transform: scale(1);
+}
+
+nav {
+    background: black;
+    top: 0;
+    //margin-top: -40px;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(136, 136, 136, 0.6);
+}
+
+li.logo {
+    max-width: 0;
+    margin-left: -2px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+    border-left: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+li.logo a {
+    color: #036a67;
+}
+
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: #9b7109;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 0 #00afbd;
+    transition: all 0.2s;
+}

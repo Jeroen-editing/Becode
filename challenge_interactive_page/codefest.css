@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 1000px;
+    margin-left: 100px;
+}
+
+header {
+    width: 900px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid rgba(158, 154, 14, 0.5);
+    margin-bottom: 60px;
+}
+
+#links, #rechts {
+    z-index: 1;
+    color: rgba(13, 12, 12, 1);
+    font-weight: 900;border: 2px solid rgba(46, 45, 43, 0.8);
+    background-color: rgba(171, 165, 150, 0.5);
+    border-radius: 15px
+
+}
+
+#links {
+    position: absolute;
+    margin: 125px 0 0 20px;
+    padding: 10px;
+    float: left;
+}
+
+#rechts {
+    position: relative;
+    display: inline;
+    margin-top:100px;
+    padding: 10px;
+}
+
+#volgende {
+    margin-top: -100px;
+    padding-left: 835px;
+}
+
+#fotobox {
+    position: relative;
+    display: inline;
+    margin: auto;
+    overflow: hidden;
+}
+
+#foto1 {
+
+}
+
+#foto2 {
+
+}
+
+#foto3 {
+
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+ul {
+
+}
+
+#list1, #list2 {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+li {
+    display: inline-block;
+}
+
+.data {
+    background-image: linear-gradient(90deg, #9C92A6, #AEABB8, #ADB3C4, #8D8EA1);
+    width: 800px;
+}
+
+a:link {
+    text-decoration: none;
+    font-family: Serif;
+    text-align: center;
+}
+
+.button {
+    padding: 5px 4px 0 4px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border: 2px solid darkslategray;
+    background-color: gray;
+    height: 40px;
+    color: gray;
+}
+
+h2 {
+    color: lightgray;
+    text-transform: uppercase;
+    font-family: Loma;
+    text-shadow: 1px 1px 5px blue;
+}
+
+li {
+    background-image: linear-gradient (90deg, #9C92A6, #AEABB8, #ADB3C4, #8D8EA1)
+}
+
+.tabs {
+    height: 200px;
+    border: 2px solid black;
+    width: 800px;
+}
+
+#programma {
+    float: left;
+}
+
+#lokatie, #formulier {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+article {
+    width: 90px;
+    margin: 30px;
+}
+
+.art {
+    float: left;
+}
+
+.art2, .art3 {
+    display: inline-block;
+}
